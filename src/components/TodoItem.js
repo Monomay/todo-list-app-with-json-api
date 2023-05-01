@@ -66,7 +66,7 @@ function TodoItem({ task }) {
 
 			setIsCompleted(false);
 		} else {
-			alert("Task is completed");
+			toast("Task is completed");
 			setIsCompleted(true);
 		}
 	};

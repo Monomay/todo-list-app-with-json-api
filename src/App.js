@@ -43,7 +43,8 @@ function App() {
 	const addTodo = async () => {
 		setLoading(false)
 		if(list === ""){
-			alert("input is empty");
+			toast("input is empty");
+			setLoading(true)
 			return ;
 		}
 		const response = await fetch("https://jsonplaceholder.typicode.com/todos",
